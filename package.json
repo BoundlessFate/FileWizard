@@ -1,0 +1,15 @@
+{
+  "name": "filewizard",
+  "version": "1.0.0",
+  "description": "Converts photos and videos, along with compression",
+  "license": "MIT",
+  "author": "Christopher Villanueva",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^40.6.1"
+  }
+}
