@@ -1,4 +1,4 @@
-.sidebar {
+div.sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
@@ -8,25 +8,43 @@
   overflow: auto;
 }
 
-.sidebar a {
+div.sidebar a {
   display: block;
   color: black;
   padding: 16px;
   text-decoration: none;
 }
 
-.sidebar a.active {
+div.sidebar a.active {
   background-color: #04AA6D;
   color: white;
 }
 
-.sidebar a:hover:not(.active) {
+div.sidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
 
 div.content {
+  display: flex;
+  flex-direction: column;
   margin-left: 200px;
   padding: 1px 16px;
-  height: 500px;
+}
+
+div.horizontalAlign {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.verticalButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+div.verticalButtons button {
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
